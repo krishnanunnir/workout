@@ -2,36 +2,36 @@ const PLAN = {
   A: {
     heading: "Workout A",
     name: "Lower + core",
-    copy: "Legs, hips, and trunk. Move with control; do not chase burn.",
+    copy: "Legs, hips, and trunk. Harder variations, still controlled.",
     weeks: [
-      [["Bodyweight squat", "10"], ["Pause glute bridge", "12"], ["Reverse lunge", "6/side"], ["Slow dead bug", "8/side"]],
-      [["Bodyweight squat", "12"], ["Pause glute bridge", "14"], ["Reverse lunge", "7/side"], ["Slow dead bug", "9/side"]],
-      [["Bodyweight squat", "14"], ["Pause glute bridge", "16"], ["Reverse lunge", "8/side"], ["Slow dead bug", "10/side"]],
-      [["Bodyweight squat", "15"], ["Pause glute bridge", "18"], ["Reverse lunge", "9/side"], ["Slow dead bug", "11/side"]],
+      [["Pause bodyweight squat", "10"], ["Single-leg glute bridge", "8/side"], ["Reverse lunge", "6/side"], ["Long-lever dead bug", "8/side"]],
+      [["Pause bodyweight squat", "12"], ["Single-leg glute bridge", "9/side"], ["Reverse lunge", "7/side"], ["Long-lever dead bug", "9/side"]],
+      [["Pause bodyweight squat", "14"], ["Single-leg glute bridge", "10/side"], ["Reverse lunge", "8/side"], ["Long-lever dead bug", "10/side"]],
+      [["Pause bodyweight squat", "15"], ["Single-leg glute bridge", "11/side"], ["Reverse lunge", "9/side"], ["Long-lever dead bug", "11/side"]],
     ],
   },
   B: {
     heading: "Workout B",
     name: "Upper + posture/core",
-    copy: "Push, upper back, and brace. Keep shoulders smooth and reps clean.",
+    copy: "Push, upper back, and brace. Harder core/posture work without adding equipment.",
     weeks: [
-      [["Incline push-up", "8"], ["Pause reverse snow angel", "10"], ["Pause bird dog", "8/side"], ["Full plank", "20–30s"]],
-      [["Incline push-up", "9"], ["Pause reverse snow angel", "12"], ["Pause bird dog", "9/side"], ["Full plank", "25–30s"]],
-      [["Incline push-up", "10"], ["Pause reverse snow angel", "14"], ["Pause bird dog", "10/side"], ["Full plank", "30–35s"]],
-      [["Incline push-up", "11"], ["Pause reverse snow angel", "15"], ["Pause bird dog", "11/side"], ["Full plank", "35–40s"]],
+      [["Incline push-up", "8"], ["Prone W raise", "10"], ["Bird-dog crunch", "8/side"], ["Plank shoulder taps", "8/side"]],
+      [["Incline push-up", "9"], ["Prone W raise", "12"], ["Bird-dog crunch", "9/side"], ["Plank shoulder taps", "9/side"]],
+      [["Incline push-up", "10"], ["Prone W raise", "14"], ["Bird-dog crunch", "10/side"], ["Plank shoulder taps", "10/side"]],
+      [["Incline push-up", "11"], ["Prone W raise", "15"], ["Bird-dog crunch", "11/side"], ["Plank shoulder taps", "11/side"]],
     ],
   },
 };
 
 const EXERCISE_LINKS = {
-  "Bodyweight squat": "exercises.html#bodyweight-squat",
-  "Pause glute bridge": "exercises.html#pause-glute-bridge",
+  "Pause bodyweight squat": "exercises.html#pause-bodyweight-squat",
+  "Single-leg glute bridge": "exercises.html#single-leg-glute-bridge",
   "Reverse lunge": "exercises.html#reverse-lunge",
-  "Slow dead bug": "exercises.html#slow-dead-bug",
+  "Long-lever dead bug": "exercises.html#long-lever-dead-bug",
   "Incline push-up": "exercises.html#incline-push-up",
-  "Pause reverse snow angel": "exercises.html#pause-reverse-snow-angel",
-  "Pause bird dog": "exercises.html#pause-bird-dog",
-  "Full plank": "exercises.html#full-plank",
+  "Prone W raise": "exercises.html#prone-w-raise",
+  "Bird-dog crunch": "exercises.html#bird-dog-crunch",
+  "Plank shoulder taps": "exercises.html#plank-shoulder-taps",
 };
 
 const STORAGE_KEY = "dailyAB.startDate";
@@ -116,19 +116,19 @@ function renderProgression(currentWeek) {
         <div class="rep-group rep-group--a">
           <strong>A</strong>
           <dl>
-            <div><dt>Squat</dt><dd>${a[0][1]}</dd></div>
-            <div><dt>Bridge</dt><dd>${a[1][1]}</dd></div>
-            <div><dt>Lunge</dt><dd>${a[2][1]}</dd></div>
-            <div><dt>Slow dead bug</dt><dd>${a[3][1]}</dd></div>
+            <div><dt>Pause squat</dt><dd>${a[0][1]}</dd></div>
+            <div><dt>Single-leg bridge</dt><dd>${a[1][1]}</dd></div>
+            <div><dt>Reverse lunge</dt><dd>${a[2][1]}</dd></div>
+            <div><dt>Long dead bug</dt><dd>${a[3][1]}</dd></div>
           </dl>
         </div>
         <div class="rep-group rep-group--b">
           <strong>B</strong>
           <dl>
-            <div><dt>Push-up</dt><dd>${b[0][1]}</dd></div>
-            <div><dt>Pause snow angel</dt><dd>${b[1][1]}</dd></div>
-            <div><dt>Pause bird dog</dt><dd>${b[2][1]}</dd></div>
-            <div><dt>Full plank</dt><dd>${b[3][1]}</dd></div>
+            <div><dt>Incline push-up</dt><dd>${b[0][1]}</dd></div>
+            <div><dt>Prone W raise</dt><dd>${b[1][1]}</dd></div>
+            <div><dt>Bird-dog crunch</dt><dd>${b[2][1]}</dd></div>
+            <div><dt>Shoulder taps</dt><dd>${b[3][1]}</dd></div>
           </dl>
         </div>
       </div>

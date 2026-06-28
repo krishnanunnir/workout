@@ -1,6 +1,6 @@
 # Daily A/B — Bodyweight Foundation
 
-A simple daily bodyweight plan focused on consistency and controlled effort, now using slightly harder beginner-friendly variations.
+A simple daily bodyweight plan focused on consistency and controlled effort, using harder beginner-friendly variations.
 
 - **Frequency:** every day
 - **Equipment:** bodyweight only; chair/wall/table optional
@@ -17,7 +17,7 @@ Every day uses the same simple structure:
 2. **Do today's workout** — A or B, 3 rounds.
 3. **Cool down if needed** — stretch/breathe enough to feel normal again.
 
-There is no required 30-minute constraint. Some days may be quicker; some days may need more rest. The important thing is the effort level.
+There is no required time constraint. Some days may be quicker; some days may need more rest. The important thing is the effort level.
 
 ## Schedule
 
@@ -51,23 +51,23 @@ Do **3 rounds**. Move slowly. Rest as needed.
 
 | Exercise | Reps |
 |---|---:|
-| Bodyweight squat | 10 |
-| Pause glute bridge | 12 |
+| Pause bodyweight squat | 10 |
+| Single-leg glute bridge | 8/side |
 | Reverse lunge | 6/side |
-| Slow dead bug | 8/side |
+| Long-lever dead bug | 8/side |
 
 ## Workout B — upper body + posture/core
 
 Do **3 rounds**. Move slowly. Rest as needed.
 
-| Exercise | Reps/time |
+| Exercise | Reps |
 |---|---:|
 | Incline push-up | 8 |
-| Pause reverse snow angel | 10 |
-| Pause bird dog | 8/side |
-| Full plank | 20–30 sec |
+| Prone W raise | 10 |
+| Bird-dog crunch | 8/side |
+| Plank shoulder taps | 8/side |
 
-If you later get a band/table setup, pause reverse snow angels can become band rows or table rows.
+If you later get a band/table setup, prone W raises can become band rows or table rows.
 
 ## Cooldown
 
@@ -94,18 +94,18 @@ Avoid finishing destroyed. Avoid daily 8–9/10 effort.
 
 ## If it is too hard
 
-Use the easier fallback for that day only:
+Reduce reps first. If it is still too hard, use the easier fallback for that day only:
 
 | Main exercise | Easier fallback |
 |---|---|
-| Bodyweight squat | Chair squat |
-| Pause glute bridge | Regular glute bridge |
+| Pause bodyweight squat | Bodyweight squat or chair squat |
+| Single-leg glute bridge | Pause glute bridge or regular glute bridge |
 | Reverse lunge | Supported split squat |
-| Slow dead bug | Short-range dead bug |
+| Long-lever dead bug | Slow dead bug or short-range dead bug |
 | Incline push-up | Higher incline or wall push-up |
-| Pause reverse snow angel | Smaller-range reverse snow angel |
-| Pause bird dog | Regular bird dog |
-| Full plank | Knees plank |
+| Prone W raise | Pause reverse snow angel |
+| Bird-dog crunch | Pause bird dog or regular bird dog |
+| Plank shoulder taps | Full plank or knees plank |
 
 ## 4-week rep progression
 
@@ -113,21 +113,21 @@ If a week feels too hard, repeat that week instead of progressing.
 
 ### Workout A — lower body + core
 
-| Week | Rounds | Bodyweight squat | Pause glute bridge | Reverse lunge | Slow dead bug |
+| Week | Rounds | Pause squat | Single-leg bridge | Reverse lunge | Long-lever dead bug |
 |---|---:|---:|---:|---:|---:|
-| Week 1 | 3 | 10 | 12 | 6/side | 8/side |
-| Week 2 | 3 | 12 | 14 | 7/side | 9/side |
-| Week 3 | 3 | 14 | 16 | 8/side | 10/side |
-| Week 4 | 3 | 15 | 18 | 9/side | 11/side |
+| Week 1 | 3 | 10 | 8/side | 6/side | 8/side |
+| Week 2 | 3 | 12 | 9/side | 7/side | 9/side |
+| Week 3 | 3 | 14 | 10/side | 8/side | 10/side |
+| Week 4 | 3 | 15 | 11/side | 9/side | 11/side |
 
 ### Workout B — upper body + posture/core
 
-| Week | Rounds | Incline push-up | Pause reverse snow angel | Pause bird dog | Full plank |
+| Week | Rounds | Incline push-up | Prone W raise | Bird-dog crunch | Plank shoulder taps |
 |---|---:|---:|---:|---:|---:|
-| Week 1 | 3 | 8 | 10 | 8/side | 20–30 sec |
-| Week 2 | 3 | 9 | 12 | 9/side | 25–30 sec |
-| Week 3 | 3 | 10 | 14 | 10/side | 30–35 sec |
-| Week 4 | 3 | 11 | 15 | 11/side | 35–40 sec |
+| Week 1 | 3 | 8 | 10 | 8/side | 8/side |
+| Week 2 | 3 | 9 | 12 | 9/side | 9/side |
+| Week 3 | 3 | 10 | 14 | 10/side | 10/side |
+| Week 4 | 3 | 11 | 15 | 11/side | 11/side |
 
 ## Progress only if
 
