@@ -89,17 +89,35 @@ function renderProgression(currentWeek) {
 
   for (let index = 0; index < 4; index += 1) {
     const week = index + 1;
+    const a = PLAN.A.weeks[index];
+    const b = PLAN.B.weeks[index];
     const card = document.createElement("article");
     card.className = `progression-week${week === currentWeek ? " is-current" : ""}`;
     card.innerHTML = `
-      <span>${week === currentWeek ? "Current" : `Week ${week}`}</span>
-      <h3>Week ${week}</h3>
-      <ul>
-        <li><span>A · squat / bridge</span><b>${PLAN.A.weeks[index][0][1]} / ${PLAN.A.weeks[index][1][1]}</b></li>
-        <li><span>A · lunge / dead bug</span><b>${PLAN.A.weeks[index][2][1]} / ${PLAN.A.weeks[index][3][1]}</b></li>
-        <li><span>B · push / snow</span><b>${PLAN.B.weeks[index][0][1]} / ${PLAN.B.weeks[index][1][1]}</b></li>
-        <li><span>B · bird / plank</span><b>${PLAN.B.weeks[index][2][1]} / ${PLAN.B.weeks[index][3][1]}</b></li>
-      </ul>
+      <div class="progression-week__header">
+        <span>${week === currentWeek ? "Current" : "Progression"}</span>
+        <h3>Week ${week}</h3>
+      </div>
+      <div class="rep-matrix" aria-label="Week ${week} rep targets">
+        <div class="rep-group rep-group--a">
+          <strong>A</strong>
+          <dl>
+            <div><dt>Squat</dt><dd>${a[0][1]}</dd></div>
+            <div><dt>Bridge</dt><dd>${a[1][1]}</dd></div>
+            <div><dt>Lunge</dt><dd>${a[2][1]}</dd></div>
+            <div><dt>Dead bug</dt><dd>${a[3][1]}</dd></div>
+          </dl>
+        </div>
+        <div class="rep-group rep-group--b">
+          <strong>B</strong>
+          <dl>
+            <div><dt>Push-up</dt><dd>${b[0][1]}</dd></div>
+            <div><dt>Snow angel</dt><dd>${b[1][1]}</dd></div>
+            <div><dt>Bird dog</dt><dd>${b[2][1]}</dd></div>
+            <div><dt>Plank</dt><dd>${b[3][1]}</dd></div>
+          </dl>
+        </div>
+      </div>
     `;
     grid.append(card);
   }
