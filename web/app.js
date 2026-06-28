@@ -4,10 +4,10 @@ const PLAN = {
     name: "Lower + core",
     copy: "Legs, hips, and trunk. Move with control; do not chase burn.",
     weeks: [
-      [["Chair squat", "10"], ["Glute bridge", "12"], ["Reverse lunge / split squat", "6/side"], ["Dead bug", "8/side"]],
-      [["Chair squat", "12"], ["Glute bridge", "14"], ["Reverse lunge / split squat", "7/side"], ["Dead bug", "9/side"]],
-      [["Chair squat", "14"], ["Glute bridge", "16"], ["Reverse lunge / split squat", "8/side"], ["Dead bug", "10/side"]],
-      [["Chair squat", "15"], ["Glute bridge", "18"], ["Reverse lunge / split squat", "9/side"], ["Dead bug", "11/side"]],
+      [["Bodyweight squat", "10"], ["Pause glute bridge", "12"], ["Reverse lunge", "6/side"], ["Slow dead bug", "8/side"]],
+      [["Bodyweight squat", "12"], ["Pause glute bridge", "14"], ["Reverse lunge", "7/side"], ["Slow dead bug", "9/side"]],
+      [["Bodyweight squat", "14"], ["Pause glute bridge", "16"], ["Reverse lunge", "8/side"], ["Slow dead bug", "10/side"]],
+      [["Bodyweight squat", "15"], ["Pause glute bridge", "18"], ["Reverse lunge", "9/side"], ["Slow dead bug", "11/side"]],
     ],
   },
   B: {
@@ -15,12 +15,23 @@ const PLAN = {
     name: "Upper + posture/core",
     copy: "Push, upper back, and brace. Keep shoulders smooth and reps clean.",
     weeks: [
-      [["Incline push-up", "8"], ["Reverse snow angel", "10"], ["Bird dog", "8/side"], ["Plank", "20–30s"]],
-      [["Incline push-up", "9"], ["Reverse snow angel", "12"], ["Bird dog", "9/side"], ["Plank", "25–30s"]],
-      [["Incline push-up", "10"], ["Reverse snow angel", "14"], ["Bird dog", "10/side"], ["Plank", "30–35s"]],
-      [["Incline push-up", "11"], ["Reverse snow angel", "15"], ["Bird dog", "11/side"], ["Plank", "35–40s"]],
+      [["Incline push-up", "8"], ["Pause reverse snow angel", "10"], ["Pause bird dog", "8/side"], ["Full plank", "20–30s"]],
+      [["Incline push-up", "9"], ["Pause reverse snow angel", "12"], ["Pause bird dog", "9/side"], ["Full plank", "25–30s"]],
+      [["Incline push-up", "10"], ["Pause reverse snow angel", "14"], ["Pause bird dog", "10/side"], ["Full plank", "30–35s"]],
+      [["Incline push-up", "11"], ["Pause reverse snow angel", "15"], ["Pause bird dog", "11/side"], ["Full plank", "35–40s"]],
     ],
   },
+};
+
+const EXERCISE_LINKS = {
+  "Bodyweight squat": "exercises.html#bodyweight-squat",
+  "Pause glute bridge": "exercises.html#pause-glute-bridge",
+  "Reverse lunge": "exercises.html#reverse-lunge",
+  "Slow dead bug": "exercises.html#slow-dead-bug",
+  "Incline push-up": "exercises.html#incline-push-up",
+  "Pause reverse snow angel": "exercises.html#pause-reverse-snow-angel",
+  "Pause bird dog": "exercises.html#pause-bird-dog",
+  "Full plank": "exercises.html#full-plank",
 };
 
 const STORAGE_KEY = "dailyAB.startDate";
@@ -59,7 +70,10 @@ function workoutKeyFromDay(dayIndex) {
 
 function renderExerciseList(rows) {
   return rows
-    .map(([name, reps]) => `<li><span>${name}</span><b>${reps}</b></li>`)
+    .map(([name, reps]) => {
+      const href = EXERCISE_LINKS[name] || "exercises.html";
+      return `<li><a class="exercise-link" href="${href}">${name}</a><b>${reps}</b></li>`;
+    })
     .join("");
 }
 
@@ -105,16 +119,16 @@ function renderProgression(currentWeek) {
             <div><dt>Squat</dt><dd>${a[0][1]}</dd></div>
             <div><dt>Bridge</dt><dd>${a[1][1]}</dd></div>
             <div><dt>Lunge</dt><dd>${a[2][1]}</dd></div>
-            <div><dt>Dead bug</dt><dd>${a[3][1]}</dd></div>
+            <div><dt>Slow dead bug</dt><dd>${a[3][1]}</dd></div>
           </dl>
         </div>
         <div class="rep-group rep-group--b">
           <strong>B</strong>
           <dl>
             <div><dt>Push-up</dt><dd>${b[0][1]}</dd></div>
-            <div><dt>Snow angel</dt><dd>${b[1][1]}</dd></div>
-            <div><dt>Bird dog</dt><dd>${b[2][1]}</dd></div>
-            <div><dt>Plank</dt><dd>${b[3][1]}</dd></div>
+            <div><dt>Pause snow angel</dt><dd>${b[1][1]}</dd></div>
+            <div><dt>Pause bird dog</dt><dd>${b[2][1]}</dd></div>
+            <div><dt>Full plank</dt><dd>${b[3][1]}</dd></div>
           </dl>
         </div>
       </div>

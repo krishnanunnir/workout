@@ -1,6 +1,6 @@
 # Daily A/B — Bodyweight Foundation
 
-A very simple beginner plan focused on consistency and controlled effort.
+A simple daily bodyweight plan focused on consistency and controlled effort, now using slightly harder beginner-friendly variations.
 
 - **Frequency:** every day
 - **Equipment:** bodyweight only; chair/wall/table optional
@@ -51,10 +51,10 @@ Do **3 rounds**. Move slowly. Rest as needed.
 
 | Exercise | Reps |
 |---|---:|
-| Chair squat | 10 |
-| Glute bridge | 12 |
-| Reverse lunge or supported split squat | 6/side |
-| Dead bug | 8/side |
+| Bodyweight squat | 10 |
+| Pause glute bridge | 12 |
+| Reverse lunge | 6/side |
+| Slow dead bug | 8/side |
 
 ## Workout B — upper body + posture/core
 
@@ -63,11 +63,11 @@ Do **3 rounds**. Move slowly. Rest as needed.
 | Exercise | Reps/time |
 |---|---:|
 | Incline push-up | 8 |
-| Reverse snow angel | 10 |
-| Bird dog | 8/side |
-| Plank | 20–30 sec |
+| Pause reverse snow angel | 10 |
+| Pause bird dog | 8/side |
+| Full plank | 20–30 sec |
 
-If you later get a band/table setup, reverse snow angels can become band rows or table rows.
+If you later get a band/table setup, pause reverse snow angels can become band rows or table rows.
 
 ## Cooldown
 
@@ -92,23 +92,20 @@ Finish thinking:
 
 Avoid finishing destroyed. Avoid daily 8–9/10 effort.
 
-## How to adjust effort
+## If it is too hard
 
-If the workout feels too easy:
+Use the easier fallback for that day only:
 
-1. Make reps slower and cleaner.
-2. Add reps according to the weekly progression.
-3. Use a slightly harder variation later.
-4. Shorten rest slightly only if it still does not feel like cardio.
-
-If the workout feels too hard:
-
-1. Rest longer.
-2. Use an easier variation.
-3. Keep the same reps for another week.
-4. Do 2 rounds instead of 3 for that day only.
-
-Consistency matters more than forcing the prescription.
+| Main exercise | Easier fallback |
+|---|---|
+| Bodyweight squat | Chair squat |
+| Pause glute bridge | Regular glute bridge |
+| Reverse lunge | Supported split squat |
+| Slow dead bug | Short-range dead bug |
+| Incline push-up | Higher incline or wall push-up |
+| Pause reverse snow angel | Smaller-range reverse snow angel |
+| Pause bird dog | Regular bird dog |
+| Full plank | Knees plank |
 
 ## 4-week rep progression
 
@@ -116,7 +113,7 @@ If a week feels too hard, repeat that week instead of progressing.
 
 ### Workout A — lower body + core
 
-| Week | Rounds | Chair squat | Glute bridge | Reverse lunge / split squat | Dead bug |
+| Week | Rounds | Bodyweight squat | Pause glute bridge | Reverse lunge | Slow dead bug |
 |---|---:|---:|---:|---:|---:|
 | Week 1 | 3 | 10 | 12 | 6/side | 8/side |
 | Week 2 | 3 | 12 | 14 | 7/side | 9/side |
@@ -125,7 +122,7 @@ If a week feels too hard, repeat that week instead of progressing.
 
 ### Workout B — upper body + posture/core
 
-| Week | Rounds | Incline push-up | Reverse snow angel | Bird dog | Plank |
+| Week | Rounds | Incline push-up | Pause reverse snow angel | Pause bird dog | Full plank |
 |---|---:|---:|---:|---:|---:|
 | Week 1 | 3 | 8 | 10 | 8/side | 20–30 sec |
 | Week 2 | 3 | 9 | 12 | 9/side | 25–30 sec |
