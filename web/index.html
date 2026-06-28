@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily A/B Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-frame">
+      <header class="hero" id="top">
+        <nav class="nav" aria-label="Page sections">
+          <a href="#today">Today</a>
+          <a href="#workouts">A/B</a>
+          <a href="#progression">Progression</a>
+          <a href="#rules">Rules</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy" aria-labelledby="pageTitle">
+            <p class="eyebrow">Daily bodyweight foundation</p>
+            <h1 id="pageTitle">Alternate. Stop fresh.</h1>
+            <p class="lede">
+              No fixed timer. Do the reps, keep the work at effort 5–6/10,
+              and leave enough in the tank to come back tomorrow.
+            </p>
+
+            <div class="hero-controls" aria-label="Plan controls">
+              <label class="date-field">
+                <span>Day 1 date</span>
+                <input id="startDate" type="date" />
+              </label>
+              <button class="button" id="todayStartButton" type="button">Make today day 1</button>
+              <button class="button ghost" id="printButton" type="button">Print</button>
+            </div>
+          </section>
+
+          <section class="effort-card" aria-label="Effort target">
+            <div class="effort-card__top">
+              <span>Target effort</span>
+              <strong>5–6</strong>
+              <span>out of 10</span>
+            </div>
+            <div class="effort-ruler" aria-hidden="true">
+              <span>1</span><span>2</span><span>3</span><span>4</span><span class="hot">5</span><span class="hot">6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+            </div>
+            <p>Good session: “I could do more.” Bad session: “I’m cooked.”</p>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section class="today-board" id="today" aria-labelledby="todayHeading">
+          <div class="today-ticket">
+            <p class="eyebrow">Today’s assignment</p>
+            <h2 id="todayHeading">Workout A</h2>
+            <div class="ticket-meta">
+              <span id="dayLabel">Day 1</span>
+              <span id="weekLabel">Week 1</span>
+              <span>3 rounds</span>
+            </div>
+            <p id="todayCopy">Lower body + core. Move with control.</p>
+          </div>
+
+          <div class="round-card">
+            <div class="round-stamp" aria-label="Do this list three times">
+              <span>Round</span>
+              <strong>×3</strong>
+            </div>
+            <ol class="exercise-stack" id="todayExercises"></ol>
+          </div>
+        </section>
+
+        <section class="split-section" id="workouts" aria-labelledby="workoutsHeading">
+          <div class="section-heading">
+            <p class="eyebrow">The whole plan</p>
+            <h2 id="workoutsHeading">Two cards. Alternate daily.</h2>
+          </div>
+
+          <div class="split-grid">
+            <article class="plan-card card-a">
+              <div class="plan-card__mark">A</div>
+              <div>
+                <p class="eyebrow">Lower + core</p>
+                <h3>Legs, hips, trunk</h3>
+                <ul class="mini-list">
+                  <li><span>Chair squat</span><b>10</b></li>
+                  <li><span>Glute bridge</span><b>12</b></li>
+                  <li><span>Reverse lunge / split squat</span><b>6/side</b></li>
+                  <li><span>Dead bug</span><b>8/side</b></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plan-card card-b">
+              <div class="plan-card__mark">B</div>
+              <div>
+                <p class="eyebrow">Upper + posture/core</p>
+                <h3>Push, back, brace</h3>
+                <ul class="mini-list">
+                  <li><span>Incline push-up</span><b>8</b></li>
+                  <li><span>Reverse snow angel</span><b>10</b></li>
+                  <li><span>Bird dog</span><b>8/side</b></li>
+                  <li><span>Plank</span><b>20–30s</b></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="flow-strip" aria-label="Daily flow">
+          <article>
+            <span>Before</span>
+            <h3>Warm enough</h3>
+            <p>Arm circles, hip circles, cat-cow, easy squats, good mornings.</p>
+          </article>
+          <article>
+            <span>During</span>
+            <h3>Rest enough</h3>
+            <p>Three rounds. Move slowly. Rest until reps look clean again.</p>
+          </article>
+          <article>
+            <span>After</span>
+            <h3>Leave fresh</h3>
+            <p>Cooldown only if useful. Tomorrow matters more than today’s ego.</p>
+          </article>
+        </section>
+
+        <section class="progression" id="progression" aria-labelledby="progressionHeading">
+          <div class="section-heading">
+            <p class="eyebrow">Rep progression</p>
+            <h2 id="progressionHeading">Same rounds. Slightly more reps.</h2>
+          </div>
+
+          <div class="progression-grid" id="progressionGrid"></div>
+        </section>
+
+        <section class="rules" id="rules" aria-label="Rules">
+          <article class="rule-card">
+            <p class="eyebrow">Progress if</p>
+            <h3>No pain, mild soreness, controlled form.</h3>
+            <p>If the habit starts to feel threatened, repeat the week.</p>
+          </article>
+          <article class="rule-card">
+            <p class="eyebrow">Reduce if</p>
+            <h3>Daily effort climbs past 6/10.</h3>
+            <p>Rest longer, use an easier variation, or do 2 rounds that day.</p>
+          </article>
+          <article class="rule-card warning">
+            <p class="eyebrow">Safety</p>
+            <h3>Stop for warning signs.</h3>
+            <p>Sharp pain, chest pain, dizziness, fainting, or unusual shortness of breath means stop.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
