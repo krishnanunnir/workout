@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Daily A/B favicon">
+  <rect width="64" height="64" rx="14" fill="#3157ff"/>
+  <path d="M12 45 32 9l20 36H40l-4-8h-8l-4 8H12Z" fill="#f6d547" stroke="#202126" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M24 51h16" stroke="#fbfcf7" stroke-width="6" stroke-linecap="round"/>
+</svg>
